@@ -14,7 +14,7 @@ home-assistant-node-red/
 │   ├── README.md
 │   ├── flow.json
 │   └── screenshot.png
-└── azan-prayer-reminders/
+└── dua-adhkar-with-repeat/
     ├── README.md
     ├── flow.json
     └── screenshot.png
