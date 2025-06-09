@@ -1,7 +1,7 @@
 # Hijri Date Flow
 
 This flow automatically calculates and updates the Hijri (Islamic) date in Home Assistant at Maghrib (sunset) each day, with support for manual adjustments to align with local moon-sighting observations.
-
+This flow eill create a date entry in home assistant.
 ---
 
 ## Folder Contents
@@ -14,10 +14,12 @@ This flow automatically calculates and updates the Hijri (Islamic) date in Home 
 
 ## Prerequisites
 
-1. **Node-RED** installed and connected to your Home Assistant instance.  
-2. **Home Assistant** server configured in Node-RED (`server` credentials in HA nodes).  
-3. **Helper in Home Assistant**: Create an **Input Number** helper (`input_number.adjust_hijri_days`), with a range of **-5** to **5**, to allow manual day adjustments.  
-4. **Entities in Home Assistant**:  
+1. **Node-RED** installed and connected to your Home Assistant instance.
+2. **Home Assistant** server configured in Node-RED (`server` credentials in HA nodes).
+3. **Helper in Home Assistant**: Create an **Input Number** helper (`input_number.adjust_hijri_days`), with a range of **-5** to **5**, to allow manual day adjustments.
+4. **Islamic Prayer Times integration** installed and configured:  
+   https://www.home-assistant.io/integrations/islamic_prayer_times
+5. **Entities in Home Assistant**:
    - `sensor.maghrib_prayer` – Provides today’s Maghrib (sunset) time.  
    - `sensor.hijri_date` – Receives the updated Hijri date state.
 
