@@ -12,9 +12,9 @@ islamic-home-automation/
 ├── LICENSE
 └── home-assistant-node-red/
     ├── hijri-date/
-    │   ├── README.md       ← Overview of this flow
-    │   ├── flow.json       ← Exported Node-RED JSON
-    │   └── screenshot.png  ← Flow workspace screenshot
+    │   ├── README.md
+    │   ├── flow.json
+    │   └── screenshot.png
     └── azan-prayer-reminders/
         ├── README.md
         ├── flow.json
