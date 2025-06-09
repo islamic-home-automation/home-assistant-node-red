@@ -55,10 +55,10 @@ This flow will also create a date entry in home assistant.
 ## How It Works
 
 1. **Sunset Trigger at Maghrib**  
-   The flow fires at local Maghrib time because the Islamic day begins at sunset, not midnight. Each new Hijri date should align with the start of the Islamic day.
+   The flow fires at local Maghrib time, sets the `next_day` flag to `1` because the Islamic day begins at sunset, not midnight. Each new Hijri date should align with the start of the Islamic day.
 
 2. **Midnight Reset**  
-   A cron inject at `00:00` resets the `next_day` flag to `0` so that the date does not advance again until the next sunset. This ensures the Hijri date remains constant throughout the Gregorian day until Maghrib.
+   As the gregorian calendar advances a day at midnight, a cron inject at `00:00` resets the `next_day` flag to `0` so that the hijri date does not advance again until the next sunset. This ensures the Hijri date remains constant throughout the Gregorian day until Maghrib.
 
 3. **Day Adjustment Slider**  
    The **Adjust Hijri Days** input number lets you manually fine-tune the Hijri date by ±5 days. This accounts for local moon-sighting variations that algorithms or APIs may not reflect.
