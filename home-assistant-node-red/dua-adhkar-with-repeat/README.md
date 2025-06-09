@@ -47,8 +47,10 @@ The flow:
 ├── Quran/
 │ ├── Sura_Mulk.mp3
 │ └── Sura_Nas.mp3
-├── Dua or Part Quran/
-│ ├── Ayatul Kursi.mp3
+└── Dua or Part Quran/
+  ├── Ayatul Kursi.mp3
+  └── Dua_before_sleep.mp3
+
 ```
 
 ---
@@ -63,6 +65,7 @@ msg.playlist = [
   { folder: "/media/Audio/Islamic/Quran", pattern: "Mulk", repeat: 1, currentRepeat: 0 },
   { folder: "/media/Audio/Islamic/Quran", pattern: "Nas", repeat: 3, currentRepeat: 0 },
   { folder: "/media/Audio/Islamic/Dua or Part Quran", pattern: "Ayatul Kursi", repeat: 1, currentRepeat: 0 }
+  { folder: "/media/Audio/Islamic/Dua or Part Quran", pattern: "sleep", repeat: 1, currentRepeat: 0 }
 ];
 msg.currentIndex = 0;
 return msg;
@@ -84,21 +87,21 @@ Each item in the array:
 
     Home Assistant UI: Press the input_button.night_adhkar
 
-Known Limitations
+### Known Limitations
 
-    If no matching files are found in a folder, the flow logs a warning and skips to the next item.
+If no matching files are found in a folder, the flow logs a warning and skips to the next item.
 
-    Requires your media to be stored under /media and exposed as media-source://media_source/local/...
+Requires your media to be stored under /media and exposed as media-source://media_source/local/...
 
-    Audio duration detection adds a ~3s buffer to ensure natural transition
+Audio duration detection adds a ~3s buffer to ensure natural transition
 
-Optional Improvements
+### Optional Improvements
 
-    Add pause/resume with input_boolean
+Add pause/resume with input_boolean
 
-    Use input_text helpers to configure the playlist dynamically
+Use input_text helpers to configure the playlist dynamically
 
-    Show progress on a dashboard using ui_template or text nodes
+Show progress on a dashboard using ui_template or text nodes
 
 License
 
