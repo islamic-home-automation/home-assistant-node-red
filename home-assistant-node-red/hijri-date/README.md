@@ -83,4 +83,4 @@ This flow will also create a date entry in home assistant.
 ---
 
 > _Screenshot of the flow is in `hijri-date-flow.png`._
-> _Screenshot of the helper setting is in `hijri-date-flow.png`._
+> _Screenshot of the helper setting is in `add_helper_in_homeassistant.png`._
