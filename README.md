@@ -6,7 +6,7 @@ Hijri date updates, prayer reminders, and beyond.
 ---
 
 ## Repository Layout
-
+```js
 islamic-home-automation/
 ├── README.md
 ├── LICENSE
@@ -19,3 +19,4 @@ islamic-home-automation/
         ├── README.md
         ├── flow.json
         └── screenshot.png
+```
