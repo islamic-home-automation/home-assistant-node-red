@@ -7,7 +7,7 @@ Hijri date updates, prayer reminders, and beyond.
 
 ## Repository Layout
 ```js
-islamic-home-automation/
+home-assistant-node-red/
 ├── README.md
 ├── LICENSE
 ├── hijri-date/
