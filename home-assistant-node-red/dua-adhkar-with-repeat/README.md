@@ -42,14 +42,14 @@ The flow:
 ---
 
 ## Folder Structure Example
-
+```js
 /media/Audio/Islamic/
 ├── Quran/
 │ ├── Sura_Mulk.mp3
 │ └── Sura_Nas.mp3
 ├── Dua or Part Quran/
 │ ├── Ayatul Kursi.mp3
-
+```
 
 ---
 
