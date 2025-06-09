@@ -81,7 +81,7 @@ return msg;
 
 ### 2. Trigger the Flow
 
-✅ Manually: Use the Manual Trigger inject node
+✅ Manually: Use the Manual Trigger inject node  
 ✅ Home Assistant UI: Press the input_button.night_adhkar
 
 ### Known Limitations
