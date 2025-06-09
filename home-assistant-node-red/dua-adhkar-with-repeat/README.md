@@ -2,12 +2,12 @@
 
 This Node-RED flow dynamically plays a customizable playlist of audio files via Home Assistant's media player. It's designed for scenarios like adhkar, du'as, Quran recitations, or bedtime routines.
 
-Each entry in the playlist specifies:
+## Each entry in the playlist specifies:
 - A folder path
 - A filename pattern (e.g. `Mulk`, `Nas`)
 - A repeat count
 
-The flow:
+## The flow:
 1. Finds matching audio files.
 2. Picks one randomly.
 3. Plays it via Home Assistant.
