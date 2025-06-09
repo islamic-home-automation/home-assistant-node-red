@@ -73,36 +73,29 @@ return msg;
 
 ---
 
-Each item in the array:
+#### Each item in the array:
 
-    folder: Absolute path to look in
-
-    pattern: Partial filename match (case-insensitive)
-
-    repeat: Number of times to repeat this item
+1. folder: Absolute path to look in
+2. pattern: Partial filename match (case-insensitive)
+3. repeat: Number of times to repeat this item
 
 ### 2. Trigger the Flow
 
-    Manually: Use the Manual Trigger inject node
-
-    Home Assistant UI: Press the input_button.night_adhkar
+✅ Manually: Use the Manual Trigger inject node
+✅ Home Assistant UI: Press the input_button.night_adhkar
 
 ### Known Limitations
 
-If no matching files are found in a folder, the flow logs a warning and skips to the next item.
-
-Requires your media to be stored under /media and exposed as media-source://media_source/local/...
-
-Audio duration detection adds a ~3s buffer to ensure natural transition
+- If no matching files are found in a folder, the flow logs a warning and skips to the next item.
+- Requires your media to be stored under /media and exposed as media-source://media_source/local/...
+- Audio duration detection adds a ~3s buffer to ensure natural transition
 
 ### Optional Improvements
 
-Add pause/resume with input_boolean
+- Add pause/resume with input_boolean
+- Use input_text helpers to configure the playlist dynamically
+- Show progress on a dashboard using ui_template or text nodes
 
-Use input_text helpers to configure the playlist dynamically
-
-Show progress on a dashboard using ui_template or text nodes
-
-License
+### License
 
 MIT
