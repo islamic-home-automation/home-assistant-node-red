@@ -1,5 +1,5 @@
 # Hijri Date Flow
-
+-
 This flow automatically calculates and updates the Hijri (Islamic) date in Home Assistant at Maghrib (sunset) each day, with support for manual adjustments to align with local moon-sighting observations.
 This flow will also create a date entry in home assistant.
 ---
