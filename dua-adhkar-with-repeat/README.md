@@ -98,4 +98,4 @@ return msg;
 
 ### License
 
-MIT
+Any use for monetary gain requires prior written permission from the copyright holder. Please read full licensing terms.
