@@ -1,4 +1,4 @@
-# Dynamic Audio Playlist System (Node-RED + Home Assistant)
+# Dua Playlist with repeat (Node-RED + Home Assistant)
 
 This Node-RED flow dynamically plays a customizable playlist of audio files via Home Assistant's media player. It's designed for scenarios like adhkar, du'as, Quran recitations, or bedtime routines.
 
